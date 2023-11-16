@@ -166,7 +166,7 @@ a:hover{
                 후원 내역 (관리자) Content - 테이블
 **************************************************************/
 /*내용 영역*/
-.adminDonationContainer{
+.adminMemberListContainer{
     /*영역 잡아두면 몇 개의 데이터가 없을 때 자꾸 커짐. */
     /* flex-basis: 90%; */
     display: flex;
@@ -177,7 +177,7 @@ a:hover{
 }
 
 /*테이블 전체*/
-.donationTable{
+.memberListTable{
     flex-basis: 100%;
     padding : 10px 25px;
     /* border : 2px solid red; */
@@ -188,7 +188,7 @@ a:hover{
 }
 
 /*테이블의 헤더*/
-.donationTheadTr th {
+.memberTheadTr th {
     padding : 15px 10px;
     border-bottom: 5px solid #FEE4D6;
 
@@ -198,7 +198,7 @@ a:hover{
 
 
 /*테이블의 데이터 요소*/
-.donationTBodyTr td{
+.memberBodyTr td{
     /*가운데 정렬*/
     text-align: center; 
     padding : 13px 10px;
@@ -207,7 +207,15 @@ a:hover{
     font-size: 12px;
 }
 
+/*버튼*/
+.memberBodyTr button{
+    border : none;
+    padding : 3px 5px;
+    border-radius: 5px;
+    background-color: #FA7575;
 
+    cursor: pointer;
+} 
 
 /*************************************************************
                 후원 내역 (관리자) Content - 페이지네이션

@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>후원내역 (관리자)</title>
-        <link rel="stylesheet" href="donationList_admin.css">
+        <title>회원 관리 (관리자)</title>
+        <link rel="stylesheet" href="memberList_admin.css">
         <script src="https://kit.fontawesome.com/ac58eafae7.js" crossorigin="anonymous"></script>
         
     </head>
@@ -13,7 +13,7 @@
         <main>
             <section class = "adminIntroArea">
                 <div class = "adminIntroTitle">
-                    후원 내역
+                    회원 관리
                 </div>
                 <hr>
             </section>
@@ -32,74 +32,89 @@
                     </ul>
                 </nav>
 
-                <!-- 후원 내용 영역-->
+                <!-- 회원관리 내용 영역-->
                 <div class = "adminContentContainer">
 
-                    <!-- 후원 검색 창-->
+                    <!-- 회원 검색 창-->
                     <div class = "adminSearchArea">
-                        <form action="#" name="adminDonationSearch">
+                        <form action="#" name="adminMemberSearch">
                             <fieldset class = "adminSearch">
-                                <input type="search" id="donationSearch" name="donationSearch" class = "applyInput"
-                                autocomplete="on" placeholder="후원자 이름 검색">
+                                <input type="search" id="memberSearch" name="memberSearch" class = "applyInput"
+                                autocomplete="on" placeholder="회원 검색">
                                 <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
                             </fieldset>
                         </form>	 
                     </div>
 
 
-                    <!-- 후원 내역 리스트 -->
-                    <div class = "adminDonationContainer">
+                    <!-- 회원 리스트 -->
+                    <div class = "adminMemberListContainer">
 
-                        <table class="donationTable">
+                        <table class="memberListTable">
                 
                             <thead>
-                                <tr class = "donationTheadTr">
+                                <tr class = "memberTheadTr">
                                     <th>번호</th>
-                                    <th>후원자</th>
-                                    <th>후원자 이메일</th>
-                                    <th>일시/정기</th>
-                                    <th>결제 일시 </th>
-                                    <th>후원 금액</th>
+                                    <th>아이디</th>
+                                    <th>이름</th>
+                                    <th>이메일</th>
+                                    <th>닉네임</th>
+                                    <th>전화번호</th>
+                                    <th>관리</th>
                                 </tr>
                             </thead>
         
                             <tbody>
                                 
-                                <tr class = "donationTBodyTr">
+                                <tr class = "memberBodyTr">
                                     <td>1</td>
+                                    <td>user01</td>
                                     <td>이유진</td>
                                     <td>aaaa@naver.com</td>
-                                    <td>정기</td>
-                                    <td>2023-11-11-12:00</td>
-                                    <td>120,000원</td>
+                                    <td>빵빵이</td>
+                                    <td>010-4444-4444</td>
+                                    <td><button>탈퇴하기</button></td>
                                 </tr> 	
                                 
-                                <tr class = "donationTBodyTr">
+                                <tr class = "memberBodyTr">
                                     <td>2</td>
-                                    <td>이유진</td>
-                                    <td>aaaa@naver.com</td>
-                                    <td>일시</td>
-                                    <td>2023-11-13-13:30</td>
-                                    <td>1,000,000원</td>
+                                    <td>user02</td>
+                                    <td>유동민</td>
+                                    <td>bbbb@naver.com</td>
+                                    <td>빵빵이2</td>
+                                    <td>010-7777-7777</td>
+                                    <td><button>탈퇴하기</button></td>
                                 </tr>                                 
 
-                                <tr class = "donationTBodyTr">
+                                <tr class = "memberBodyTr">
                                     <td>3</td>
+                                    <td>user03</td>
                                     <td>유은서</td>
-                                    <td>bbbb@naver.com</td>
-                                    <td>일시</td>
-                                    <td>2023-11-13-14:30</td>
-                                    <td>10,000원</td>
+                                    <td>cccc@naver.com</td>
+                                    <td>빵빵이3</td>
+                                    <td>010-3333-3333</td>
+                                    <td><button>탈퇴하기</button></td>
                                 </tr>   
 
-                                <tr class = "donationTBodyTr">
+                                <tr class = "memberBodyTr">
                                     <td>4</td>
-                                    <td>유은서</td>
-                                    <td>bbbb@naver.com</td>
-                                    <td>일시</td>
-                                    <td>2023-11-15-13:30</td>
-                                    <td>50,000원</td>
-                                </tr>                                  
+                                    <td>user04</td>
+                                    <td>최지은</td>
+                                    <td>dddd@naver.com</td>
+                                    <td>빵빵이4</td>
+                                    <td>010-1111-1111</td>
+                                    <td><button>탈퇴하기</button></td>
+                                </tr>  
+
+                                <tr class = "memberBodyTr">
+                                    <td>5</td>
+                                    <td>user05</td>
+                                    <td>김도연</td>
+                                    <td>eeee@naver.com</td>
+                                    <td>빵빵이5</td>
+                                    <td>010-2222-2222</td>
+                                    <td><button>탈퇴하기</button></td>
+                                </tr>                                 
 
                             </tbody>
                         </table>
