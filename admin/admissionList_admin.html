@@ -5,23 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>입소신청 내역 (관리자)</title>
         <link rel="stylesheet" href="admissionList_admin.css">
+        <link rel="stylesheet" href="../page_footer/footer.css">
+        <link rel="stylesheet" href="../page_header/header.css">
+        
     </head>
     <body>
+
+        <!-- <header>
+            <img class="image3" src="../images/로고.png" alt="로고" class="image3">
+            <nav class="header-bar">
+                <ul class="menu-items">
+                    <li><a href="#절차및관리">절차 및 관리</a></li>
+                    <li><a href="#무료입소신청">무료 입소 신청</a></li>
+                    <li><a href="#입양하기">입양하기</a></li>
+                    <li><a href="#병원">병원, 훈련소</a></li>
+                    <li><a href="#입양후기">입양 후기</a></li>
+                    <li><a href="#로그인">로그인</a></li>
+                </ul>
+            </nav>
+        </header> -->
+
+
         <main>
-            <section class = "admissionListTitleArea">
-                <div class = "admissionListTitle">
+            <section class = "adminIntroArea">
+                <div class = "adminIntroTitle">
                     입소신청 내역
                 </div>
                 <hr>
             </section>
 
-            <section class = "admissionListContentArea">
+            <section class = "adminContentArea">
 
                 <!-- nav 자리-->
-                <nav>
+                <nav class = "navAdmission">
+                    <ul>
+                        <li> <a href = "#"> 1:1 문의함 </a> </li>
+                        <li> <a href = "#"> 예약 내역 </a> </li>
+                        <li> <a href = "#"> 후원 내역 </a> </li>
+                        <li> <a href = "#"> 입소신청 내역 </a></li>
+                        <li> <a href = "#"> 회원 관리 </a></li>
+                        <li> <a href = "#"> 관리 현황 </a></li>
+                    </ul>
                 </nav>
 
-                <div class = "admissionListContentContainer">
+                <!-- 입소 신청된 내용 영역-->
+                <div class = "adminContentContainer">
+
+                    <!-- 입소 진행 사항 버튼 영역-->
                     <div class = "admissionStatusBtnArea">
                         <div class = "statusBtn">
                             입소 진행 중
@@ -32,20 +62,272 @@
                     </div>
 
 
-                    <!-- 입소 신청된 내역 자격증 카드 형태로 -->
+                    <!-- 입소 신청된 내역 자격증 카드 형태 영역 -->
+                    <div class = "admissionCardArea">
+                        <!-- 카드 한 개 -->
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
 
-                    <div>
-                        
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "admissionCardBoxArea">
+                            <div class = "admissionCardBox">
+                                <div class = "cardProfile">
+                                    <div class = "cardProfileWrapper">
+                                        <!-- <img src = "../images/dog.svg"> -->
+                                        <img src = "../images/포메.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class = "cardInfo">
+                                    <div class = "cardInfoContent">
+                                        이름 : 짱구
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        연락처 : 010-4444-1113
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        견종 : 포메라니안
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        성별 : 남아
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        나이 : 1세
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        특이사항 : 잘먹어요
+                                    </div>
+
+                                    <div class = "cardInfoContent">
+                                        입소희망일 : 2023-11-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
-
                 </div>
-                
-
-
             </section>
-
         </main>
+
+        <!-- <footer>
+            <div class="footer-content">
+                <img src="images/phone.png" alt="전화번호 아이콘" width="30" height="30" style="margin-bottom: -10px;">
+                <p>1544-9770</p>
+            <br>
+            <br>
+            <p>주식회사 멍프랜드</p><br>
+            <p>사업자번호 : 851-87-00622 | 사업장 주소 : 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F</p><br><br>
+            <p>&copy; Mungfriend all right reserved.</p>
+            </div>
+        </footer> -->
+
     </body>
 </html>
