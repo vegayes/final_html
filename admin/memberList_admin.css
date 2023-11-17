@@ -6,7 +6,11 @@
 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
 */
 
-@font-face { font-family: 'NanumGothic';src: url('/fonts/NanumGothic.eot');src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
 
 *{
     box-sizing: border-box;
@@ -15,12 +19,13 @@
     padding: 0;
     margin: 0;
     /* font-family: 'Nanum Gothic', sans-serif; */
-    font-family: 'NanumGothic', 'serif';
+    font-family: 'NanumGothic', 'sans-serif';
 }
 
 
 main{
-    min-height: 1080px;
+    /* min-height: 1080px; */
+    height: auto;
     width: 1920px;
 
     display: flex;
@@ -31,6 +36,7 @@ main{
 
 hr{
     border : 1px solid #151615;
+    width: 85%;
 }
 
 
@@ -151,7 +157,7 @@ a:hover{
 
 /*nav바 13% 위치*/
 .adminContentContainer{
-    flex-basis: 87%;
+    flex-basis: 74%;
 
     /*페이지네이션 내리기 위해서 일단 임의로 잡아둠*/
     height: 700px; /*★나중에 필요 없을 듯★*/
@@ -210,7 +216,7 @@ a:hover{
 /*버튼*/
 .memberBodyTr button{
     border : none;
-    padding : 3px 5px;
+    padding : 5px 10px;
     border-radius: 5px;
     background-color: #FA7575;
 

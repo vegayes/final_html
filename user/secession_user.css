@@ -33,7 +33,7 @@ hr{
 
 
 /*************************************************
-                쿠폰함 (사용자) Intro
+                사용자 Intro
 *************************************************/
 .userIntroArea{
     flex-basis: 30%;
@@ -51,6 +51,8 @@ hr{
 
     font-size: 20px;
     font-weight: 700;
+
+    /* border : 2px solid red; */
 }
 
 
@@ -88,7 +90,7 @@ a:hover{
 
 
 /*************************************************
-                쿠폰함 (사용자) Content
+                사용자 Content
 *************************************************/
 .userContentArea{
     flex-basis: 70%;
@@ -107,123 +109,148 @@ a:hover{
     
     padding-top : 20px ;
 
-    /* border : 2px solid yellow; */
-}
-
-/*************************************************************
-                쿠폰함 (사용자) Content 
-**************************************************************/
-/*내용 영역*/
-.userCouponListArea{
-    /*영역 잡아두면 몇 개의 데이터가 없을 때 자꾸 커짐. */
-    flex-basis: 100%; 
-    /* border : 2px solid green; */
-    padding : 5px 10px;
-
-    display: flex;
-    flex-wrap: wrap;
     
 }
 
-.userCouponElementArea{
 
-    flex-basis: 50%;
+/*************************************************
+                사용자 Content- 회원탈퇴
+*************************************************/
+.secessionForm{
 
-    height: 150px;
-
-    padding : 0.5% 10px;
+    padding: 40px 20%;
 
     display: flex;
-
     flex-direction: column;
 
-    border : 2px solid red;
 }
 
-/*쿠폰 형태 영역*/
-.couponBoxArea{
+.secessionElement{
+    /* border : 2px solid blue; */
+    display: flex;
+
+    padding : 20px;
+}
+
+.secessionTitle{
+    flex-basis: 30%;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 5%;
+}
+
+.secessionInput{
+    /* border : 2px solid orange; */
+
+    flex-basis: 70%;
+    /* border : 2px solid green; */
+
+    padding-right: 5%;
+
+    display: flex;
+}
+
+.secessionFieldset{
+    flex-basis: 100%;
+    border: 5px solid #FEE4D6;
+    border-radius: 10px;
+    padding : 10px 2px;
+}
+
+.secessionFieldset input{
+    width: 100%;
+    border : none; 
+    outline : 0;
+
+    font-size: 15px;
+}
+
+
+.secessionElementContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border : 2px solid red; */
+    padding: 0px 2%;
+}
+
+.secessionProcessBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+
+    padding:15px;
+
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 200%;
+}
+
+.secessionProcessCheck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*약관동의 체크 내용 전체 div*/
+.secessionProcessCheck{
+
+    display: flex;
+    flex-direction: column;
+    padding : 10px;
+
+    align-items: center;
+}
+
+.secessionProcessCheck > label {
+    padding : 10px 10px; 
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/*체크박스 margin*/
+.secessionProcessCheck > label > input{
+    margin-right: 5px;
+}
+
+
+/*후원하기 버튼*/
+.secessionButtonArea{
+    padding : 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secessionButtonBox{
     flex-basis: 80%;
-    display: flex;
-    align-items:center;
-}
+    border-radius: 10px;
+    background: #FEE4D6;
+    padding : 20px 30px;
 
-/*쿠폰 박스 */
-.couponBox{
-    /* width: 394px; */
-    height: 90%;
-    flex-basis: 90%;
-    background-color: #FFEBEB;
-
-    display: flex;
-    align-items: center;
-
-    padding : 3% 3%;
-}
-
-.couponImgArea{
-    flex-basis: 40%;
-}
-
-.couponBox img{
-    /*사진 고정 시키는 게 낳을 거 같아서,, */
-    /* width: 90px;
-    height: 80px; */
-
-    padding: 5px 15px;
-}
-
-.couponInfoArea{
-    flex-basis: 60%;
-    padding : 5px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.couponInfoArea p:nth-of-type(1){
+    font-size: 15px;
+    font-style: normal;
     font-weight: 700;
-}
-
-.couponInfoArea p:nth-of-type(2){
-
-    font-size: 12px;
-    font-weight: 700;
-
-}
-
-
-/*
-.couponBox p{
-    flex-basis: 60%;
-    padding : 5px 15px;
+    line-height: normal;
 
     display: flex;
-    align-items: center;
-
-    font-weight: 700;
-}
-*/
-/*쿠폰영역 옆에 뾰족*/
-.couponBoxPointArea{
-    height: 90%;
-    /* flex-basis: 30; */
-    display: flex;
-    flex-direction: column;
-}
-
-.point {
-    flex: 1;
-    border-style: solid;
-    border-width: 0 10px 15px 6px; /* 삼각형 크기 설정 */
-    /* height: 100%; */
-    border-color: transparent transparent #FFEBEB transparent; /* 원하는 배경색 설정 */
-    transform: rotate(90deg); /* 삼각형을 90도로 회전 */
-
-}
-
-.couponInfo{
-    flex-basis: 20%;
-    padding : 5px;
-
-    font-size: 12px;
+    justify-content: center;
 }

@@ -1,4 +1,8 @@
-@font-face { font-family: 'NanumGothic';src: url('/fonts/NanumGothic.eot');src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
 
 *{
     box-sizing: border-box;
@@ -7,12 +11,13 @@
     padding: 0;
     margin: 0;
 
-    font-family: 'NanumGothic', 'serif';
+    font-family: 'NanumGothic', 'sans-serif';
 }
 
 
 main{
-    min-height: 1080px;
+    /* min-height: 1080px; */
+    height: auto;
     width: 1920px;
 
     display: flex;
@@ -186,6 +191,14 @@ input[name="amount"]:checked + div{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    display: flex;
+    /* justify-content: center; */
+}
+
+/*체크박스 margin*/
+.donationProcessCheck > label > input{
+    margin-right: 5px;
 }
 
 
